@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO App</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c2e9f3f2ff.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <div class="container center">
+      <h1 class="center title">My TODO App</h1>
+      <div class="flow-right controls">
+        <span>Item count: <span id="item-count">0</span></span>
+        <span>Unchecked count: <span id="unchecked-count">0</span></span>
+      </div>
+      <button class="button center" onClick="newTodo()">New TODO</button>
+      <div id="createItem" style="display:none">
+        <input type="text" id="newItem" name="textbox" value="" placeholder="create todo item">
+        <button type="submit" id="saveItem" onClick="saveItem()"><i class="fa fa-check" aria-hidden="true"></i></button>
+      </div>
+      <h2 id="todolist-head" style="text-align: center; visibility: hidden;">My Todo List</h2>
+      <ul id="todo-list" class="todo-list"></ul>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
